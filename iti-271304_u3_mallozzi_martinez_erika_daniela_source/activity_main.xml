@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generador de Sopa de Letras"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa palabras separadas por coma (,) y un número de páginas para generar tu PDF con sopa de letras."
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/etWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa palabras separadas por comas"
+        android:inputType="text"
+        android:padding="8dp"
+        android:background="#F0F0F0"/>
+
+    <EditText
+        android:id="@+id/etPages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de páginas"
+        android:inputType="number"
+        android:padding="8dp"
+        android:background="#F0F0F0"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón para generar PDF -->
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generar PDF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnOpenPdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir PDF"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="0"
+        android:rowCount="0"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone">
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" @Daniela-Mallozzi"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:layout_marginTop="32dp"
+        android:gravity="center"/>
+</LinearLayout>
+
